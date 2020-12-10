@@ -1,4 +1,4 @@
-class Top50Object < ActiveRecord::Base
+class Top50Object < ApplicationRecord
 
   #attr_accessor :id, :type_id, :is_valid, :comment
   belongs_to :top50_object_type, foreign_key: "type_id"

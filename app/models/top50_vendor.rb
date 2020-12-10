@@ -1,4 +1,4 @@
-class Top50Vendor < ActiveRecord::Base
+class Top50Vendor < ApplicationRecord
   self.primary_key = "id"
   belongs_to :top50_object, foreign_key: "id"
   belongs_to :top50_country, foreign_key: "country_id"

@@ -1,2 +1,2 @@
-class Top50ValidType < ActiveRecord::Base
+class Top50ValidType < ApplicationRecord
 end

@@ -1,4 +1,4 @@
-class Top50AttributeDbval < ActiveRecord::Base
+class Top50AttributeDbval < ApplicationRecord
   self.primary_key = "id"
   belongs_to :top50_attribute, foreign_key: "id"
   belongs_to :top50_attribute_datatype, foreign_key: "datatype_id"  

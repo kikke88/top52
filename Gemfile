@@ -1,10 +1,17 @@
 source "https://rubygems.org"
 
 gem "rake"
-gem "rails", "~> 4.1.2"
-gem "activerecord-jdbcpostgresql-adapter", "~> 1.3"
+gem "rails", "~> 5.0"
+platforms :jruby do
+  gem "activerecord-jdbcpostgresql-adapter", "~> 1.3.21"
+end
+gem "pg", "~> 0.18", platform: :ruby
 gem "uglifier", ">= 1.3.0"
 gem "chartkick"
+
+gem 'therubyracer' # for execjs
+gem 'rails-controller-testing'
+gem 'activerecord-native_db_types_override'
 
 gem "jquery-rails"
 gem "jquery-ui-rails"

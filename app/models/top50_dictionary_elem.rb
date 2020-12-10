@@ -1,4 +1,4 @@
-class Top50DictionaryElem < ActiveRecord::Base
+class Top50DictionaryElem < ApplicationRecord
   belongs_to :top50_dictionary, foreign_key: "dict_id"
   has_many :top50_attribute_val_dicts, foreign_key: "dict_elem_id"
 

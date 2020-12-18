@@ -1,4 +1,4 @@
-class Top50Benchmark < ActiveRecord::Base
+class Top50Benchmark < ApplicationRecord
   self.primary_key = "id"
   belongs_to :top50_object, foreign_key: "id"  
   belongs_to :top50_measure_unit, foreign_key: "measure_id"

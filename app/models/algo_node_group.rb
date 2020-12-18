@@ -1,2 +1,2 @@
-class AlgoNodeGroup < ActiveRecord::Base
+class AlgoNodeGroup < ApplicationRecord
 end

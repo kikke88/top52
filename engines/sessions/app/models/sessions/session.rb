@@ -3,7 +3,7 @@
 # а также заполняют опросники Surveys, создавая UserSurveys.
 
 module Sessions
-  class Session < ActiveRecord::Base
+  class Session < ApplicationRecord
     belongs_to :personal_survey, class_name: "Survey"
     belongs_to :projects_survey, class_name: "Survey"
     belongs_to :counters_survey, class_name: "Survey"

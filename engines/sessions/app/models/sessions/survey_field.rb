@@ -1,6 +1,6 @@
 # Поле опроса
 module Sessions
-  class SurveyField < ActiveRecord::Base
+  class SurveyField < ApplicationRecord
     include ActionView::Helpers::JavaScriptHelper
 
     KINDS = [:radio, :select, :mselect, :uselect, :string, :text, :number, :scientometrics, :string_scientometrics]

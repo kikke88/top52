@@ -1,4 +1,4 @@
-class NewsfeedImport < ActiveRecord::Base
+class NewsfeedImport < ApplicationRecord
   self.primary_key = "id"
   
   validates_presence_of :title

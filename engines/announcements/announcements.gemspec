@@ -13,13 +13,15 @@ Gem::Specification.new do |s|
   s.summary     = "summ."
   s.description = "desc."
   s.license     = "MIT"
+  s.platform = 'java' if RUBY_ENGINE == 'jruby'
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "rails", "~> 4.1.4"
-
-  s.add_dependency "activerecord-jdbcpostgresql-adapter"
-  s.add_dependency "decorators", "~> 1.0.2"
+  s.add_dependency "rails", "~> 5.0"
+  s.add_dependency "activerecord-jdbcpostgresql-adapter" if /java/.match(RUBY_PLATFORM)
+  s.add_dependency "pg", "~> 0.18" unless /java/.match(RUBY_PLATFORM)
+  
+  s.add_dependency "decorators", "~> 2.0.3"
   s.add_dependency "state_machine"
   s.add_dependency "slim"
   s.add_dependency "sidekiq"

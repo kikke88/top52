@@ -2,7 +2,7 @@
 #
 # Название позиции в организации
 module Core
-  class EmploymentPositionName < ActiveRecord::Base
+  class EmploymentPositionName < ApplicationRecord
     validates :name, presence: true, uniqueness: true
 
     def self.rffi

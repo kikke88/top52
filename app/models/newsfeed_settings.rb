@@ -1,4 +1,4 @@
-class NewsfeedSettings < ActiveRecord::Base
+class NewsfeedSettings < ApplicationRecord
   self.primary_key = "id"
 
   attr_accessor :start_date

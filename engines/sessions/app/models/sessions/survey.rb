@@ -7,7 +7,7 @@
 # пользователями ответами на вопросы из Survey.
 
 module Sessions
-  class Survey < ActiveRecord::Base
+  class Survey < ApplicationRecord
     belongs_to :session
     belongs_to :kind, class_name: "Sessions::SurveyKind", foreign_key: :kind_id
 

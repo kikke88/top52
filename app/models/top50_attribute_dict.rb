@@ -1,4 +1,4 @@
-class Top50AttributeDict < ActiveRecord::Base
+class Top50AttributeDict < ApplicationRecord
 
   self.primary_key = "id"
   belongs_to :top50_attribute, foreign_key: "id"

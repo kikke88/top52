@@ -1,5 +1,5 @@
 module Core
-  class Cluster < ActiveRecord::Base
+  class Cluster < ApplicationRecord
     has_many :requests, inverse_of: :cluster, dependent: :destroy
     has_many :accesses, inverse_of: :cluster, dependent: :destroy
     has_many :projects, through: :accesses

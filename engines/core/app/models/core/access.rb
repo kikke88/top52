@@ -1,5 +1,5 @@
 module Core
-  class Access < ActiveRecord::Base
+  class Access < ApplicationRecord
     belongs_to :project
     belongs_to :cluster
 

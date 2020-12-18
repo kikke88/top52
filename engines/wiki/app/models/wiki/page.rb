@@ -1,5 +1,5 @@
 module Wiki
-  class Page < ActiveRecord::Base
+  class Page < ApplicationRecord
     validates :content, :name, :url, presence: true
     validates :url, uniqueness: true
 

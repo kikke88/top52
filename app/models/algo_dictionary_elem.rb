@@ -1,2 +1,2 @@
-class AlgoDictionaryElem < ActiveRecord::Base
+class AlgoDictionaryElem < ApplicationRecord
 end

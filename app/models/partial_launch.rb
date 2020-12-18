@@ -1,4 +1,4 @@
-class PartialLaunch < ActiveRecord::Base
+class PartialLaunch < ApplicationRecord
   self.primary_key = "id"
   belongs_to :launch_result, foreign_key: "launch_id"
   belongs_to :comp_group, foreign_key: "comp_group_id", class_name: "Top50Object"

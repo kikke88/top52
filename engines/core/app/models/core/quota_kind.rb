@@ -1,5 +1,5 @@
 module Core
-  class QuotaKind < ActiveRecord::Base
+  class QuotaKind < ApplicationRecord
     validates :name, :measurement, presence: true
     has_many :cluster_quotas, class_name: "ClusterQuota", inverse_of: :quota_kind, dependent: :destroy
     has_many :request_fields, dependent: :destroy

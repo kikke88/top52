@@ -1,2 +1,2 @@
-class AlgoLaunch < ActiveRecord::Base
+class AlgoLaunch < ApplicationRecord
 end

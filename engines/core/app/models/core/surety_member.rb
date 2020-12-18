@@ -1,5 +1,5 @@
 module Core
-  class SuretyMember < ActiveRecord::Base
+  class SuretyMember < ApplicationRecord
     belongs_to :user, class_name: Core.user_class
     belongs_to :surety
     belongs_to :organization

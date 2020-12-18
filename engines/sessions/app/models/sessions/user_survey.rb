@@ -2,7 +2,7 @@
 
 # Опрос, который заполняет пользователь
 module Sessions
-  class UserSurvey < ActiveRecord::Base
+  class UserSurvey < ApplicationRecord
     belongs_to :session
     belongs_to :user, class_name: Sessions.user_class, inverse_of: :surveys
     belongs_to :survey

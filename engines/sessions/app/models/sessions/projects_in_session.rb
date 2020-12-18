@@ -1,5 +1,5 @@
 module Sessions
-  class ProjectsInSession < ActiveRecord::Base
+  class ProjectsInSession < ApplicationRecord
     belongs_to :project, class_name: "Core::Project"
     belongs_to :session
 

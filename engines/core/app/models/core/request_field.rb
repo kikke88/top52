@@ -1,5 +1,5 @@
 module Core
-  class RequestField < ActiveRecord::Base
+  class RequestField < ApplicationRecord
     belongs_to :request
     belongs_to :quota_kind
 

@@ -1,4 +1,4 @@
-class Top50BenchmarkResult < ActiveRecord::Base
+class Top50BenchmarkResult < ApplicationRecord
   self.primary_key = "id"
   belongs_to :top50_object, foreign_key: "id"  
   belongs_to :top50_benchmark, foreign_key: "benchmark_id"

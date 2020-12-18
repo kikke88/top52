@@ -1,4 +1,4 @@
-class LaunchResult < ActiveRecord::Base
+class LaunchResult < ApplicationRecord
   belongs_to :top50_object, foreign_key: "id"  
   belongs_to :impl, foreign_key: "imp_id", class_name: "AlgoImplementation"
   belongs_to :top50_machine, foreign_key: "machine_id"

@@ -1,8 +1,10 @@
 source "https://rubygems.org"
 
 gem "rake"
-gem "rails", "~> 4.1.2"
-gem "activerecord-jdbcpostgresql-adapter", "~> 1.3"
+gem "rails", "~> 5.0"
+platform :jruby do
+  gem "activerecord-jdbcpostgresql-adapter", "~> 1.3.21"
+end
 gem "uglifier", ">= 1.3.0"
 gem "chartkick"
 
@@ -27,6 +29,10 @@ gem "rollbar"
 gem "foreman"
 gem "puma"
 
+gem "pg", "~> 0.18", platform: :ruby
+gem 'therubyracer' # for execjs
+gem "sassc-rails"
+
 gem "face",           path: "engines/face"
 gem "authentication", path: "engines/authentication"
 gem "core",           path: "engines/core"
@@ -37,7 +43,7 @@ gem "wiki",           path: "engines/wiki"
 gem "announcements",  path: "engines/announcements"
 
 gem "config"
-gem "decorators", "~> 1.0.0"
+gem "decorators", "~> 2.0.3"
 
 gem "will_paginate"
 gem "will_paginate-bootstrap"

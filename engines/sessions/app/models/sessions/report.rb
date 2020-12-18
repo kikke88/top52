@@ -2,7 +2,7 @@
 
 # Отчет о проделанной работе по проекту.
 module Sessions
-  class Report < ActiveRecord::Base
+  class Report < ApplicationRecord
     belongs_to :session
 
     belongs_to :project, class_name: "Core::Project", foreign_key: :project_id

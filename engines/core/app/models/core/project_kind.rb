@@ -1,5 +1,5 @@
 module Core
-  class ProjectKind < ActiveRecord::Base
+  class ProjectKind < ApplicationRecord
     validates :name, presence: true
   end
 end

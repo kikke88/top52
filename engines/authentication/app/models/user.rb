@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   authenticates_with_sorcery!
 
   validates :password, confirmation: true, length: { minimum: 6 }, on: :create

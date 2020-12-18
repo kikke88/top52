@@ -1,5 +1,5 @@
 module Statistics
-  class ProjectStat < ActiveRecord::Base
+  class ProjectStat < ApplicationRecord
     KINDS = [ :by_organization_kind,
               :by_organization_city,
               :by_msu_subdivisions,

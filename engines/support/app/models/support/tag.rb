@@ -1,6 +1,6 @@
 # Тег тикета
 module Support
-  class Tag < ActiveRecord::Base
+  class Tag < ApplicationRecord
     attr_accessor :merge_id
 
     has_and_belongs_to_many :tickets, join_table: :support_tickets_tags

@@ -1,2 +1,2 @@
-class AlgoAttributeValueDict < ActiveRecord::Base
+class AlgoAttributeValueDict < ApplicationRecord
 end

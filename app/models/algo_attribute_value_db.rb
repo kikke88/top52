@@ -1,2 +1,2 @@
-class AlgoAttributeValueDb < ActiveRecord::Base
+class AlgoAttributeValueDb < ApplicationRecord
 end

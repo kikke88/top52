@@ -1,5 +1,5 @@
 module Core
-  class ProjectInvitation < ActiveRecord::Base
+  class ProjectInvitation < ApplicationRecord
     belongs_to :project
 
     after_create :send_email_to_user

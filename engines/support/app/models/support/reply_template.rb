@@ -1,6 +1,6 @@
 # Шаблон ответа на тикет
 module Support
-  class ReplyTemplate < ActiveRecord::Base
+  class ReplyTemplate < ApplicationRecord
     validates :subject, presence: true
 
     def to_s

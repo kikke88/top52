@@ -1,5 +1,5 @@
 # Модель группы пользователей
-class Group < ActiveRecord::Base
+class Group < ApplicationRecord
   GroupStrata = Struct.new(:name, :weight)
   SUPERADMINS     = GroupStrata.new( "superadmins",     0 )
   NEWS_MODERATORS = GroupStrata.new( "news_moderators", 1 )

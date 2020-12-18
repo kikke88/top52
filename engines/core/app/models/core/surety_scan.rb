@@ -1,5 +1,5 @@
 module Core
-  class SuretyScan < ActiveRecord::Base
+  class SuretyScan < ApplicationRecord
     belongs_to :surety
 
     mount_uploader :image, SuretyScanUploader

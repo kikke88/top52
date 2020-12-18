@@ -2,7 +2,7 @@
 #
 # Позиция в организации
 module Core
-  class EmploymentPosition < ActiveRecord::Base
+  class EmploymentPosition < ApplicationRecord
     belongs_to :employment, inverse_of: :positions
 
     validates :employment, :name, :value, presence: true

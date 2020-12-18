@@ -1,4 +1,4 @@
-class Announcement < ActiveRecord::Base
+class Announcement < ApplicationRecord
   has_many :announcement_recipients
   has_many :recipients, class_name: "User", source: :user, through: :announcement_recipients
 

@@ -1,5 +1,5 @@
 module Core
-  class OrganizationDepartment < ActiveRecord::Base
+  class OrganizationDepartment < ApplicationRecord
     belongs_to :organization, inverse_of: :departments
 
     has_many :projects

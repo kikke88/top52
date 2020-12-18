@@ -1,4 +1,4 @@
-class NewsfeedLocal < ActiveRecord::Base
+class NewsfeedLocal < ApplicationRecord
   validates_presence_of :announce
   validates_presence_of :date_created
   validates_presence_of :start_date

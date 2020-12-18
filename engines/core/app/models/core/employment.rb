@@ -1,6 +1,6 @@
 # encoding: utf-8
 module Core
-  class Employment < ActiveRecord::Base
+  class Employment < ApplicationRecord
     belongs_to :user, class_name: Core.user_class, foreign_key: :user_id, inverse_of: :employments
     belongs_to :organization
     belongs_to :organization_department

@@ -1,4 +1,4 @@
-class Top50Machine < ActiveRecord::Base
+class Top50Machine < ApplicationRecord
 
   self.primary_key = "id"
   belongs_to :top50_object, foreign_key: "id"

@@ -1,5 +1,5 @@
 module Core
-  class City < ActiveRecord::Base
+  class City < ApplicationRecord
     belongs_to :country
 
     scope :finder, ->(q){ where("title_ru like :q OR title_en like :q", q: "%#{q.mb_chars}%").order(:title_ru) }

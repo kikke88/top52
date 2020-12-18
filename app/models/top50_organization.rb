@@ -1,4 +1,4 @@
-class Top50Organization < ActiveRecord::Base
+class Top50Organization < ApplicationRecord
   self.primary_key = "id"
   belongs_to :top50_object, foreign_key: "id"
   belongs_to :top50_city, foreign_key: "city_id"

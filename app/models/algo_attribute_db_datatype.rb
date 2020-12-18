@@ -1,2 +1,2 @@
-class AlgoAttributeDbDatatype < ActiveRecord::Base
+class AlgoAttributeDbDatatype < ApplicationRecord
 end

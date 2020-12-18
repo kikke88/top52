@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 module Core
-  class Surety < ActiveRecord::Base
+  class Surety < ApplicationRecord
     include Exportable
 
     delegate :organization, :organization_department, to: :project

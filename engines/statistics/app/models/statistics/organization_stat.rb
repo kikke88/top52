@@ -1,5 +1,5 @@
 module Statistics
-  class OrganizationStat < ActiveRecord::Base
+  class OrganizationStat < ApplicationRecord
     KINDS = [ :by_kind,
               :by_city ].freeze
 

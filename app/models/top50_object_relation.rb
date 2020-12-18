@@ -1,2 +1,2 @@
-class Top50ObjectRelation < ActiveRecord::Base
+class Top50ObjectRelation < ApplicationRecord
 end

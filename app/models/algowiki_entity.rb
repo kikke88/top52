@@ -1,4 +1,4 @@
-class AlgowikiEntity < ActiveRecord::Base
+class AlgowikiEntity < ApplicationRecord
     belongs_to :algowiki_entity_type, foreign_key: "type_id"
     has_many :algo_attribute_values_dbs, foreign_key: "obj_id"
     has_many :algo_attribute_value_dicts, foreign_key: "obj_id"

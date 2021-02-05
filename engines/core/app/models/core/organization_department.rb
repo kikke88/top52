@@ -5,7 +5,7 @@ module Core
     has_many :projects
 
     has_many :employments, inverse_of: :organization_department
-    has_many :users, class_name: Core.user_class, through: :employments
+    has_many :users, class_name: Core.user_class.to_s, through: :employments
 
     after_create :notify_admins
 

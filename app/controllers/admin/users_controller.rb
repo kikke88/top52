@@ -1,6 +1,6 @@
 class Admin::UsersController < Admin::ApplicationController
-  before_filter :setup_default_filter, only: :index
-  before_filter :check_authorization, except: :show
+  before_action :setup_default_filter, only: :index
+  before_action :check_authorization, except: :show
 
   def index
     @search = User.includes(:employments).search(params[:q])

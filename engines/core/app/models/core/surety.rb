@@ -6,11 +6,11 @@ module Core
 
     delegate :organization, :organization_department, to: :project
 
-    belongs_to :author, class_name: Core.user_class, foreign_key: :author_id, inverse_of: :authored_sureties
+    belongs_to :author, class_name: Core.user_class.to_s, foreign_key: :author_id, inverse_of: :authored_sureties
     belongs_to :project, inverse_of: :sureties
 
     has_many :surety_members, inverse_of: :surety, dependent: :destroy
-    has_many :members, class_name: Core.user_class, through: :surety_members, source: :user
+    has_many :members, class_name: Core.user_class.to_s, through: :surety_members, source: :user
 
     has_many :scans, class_name: "Core::SuretyScan", dependent: :destroy
 

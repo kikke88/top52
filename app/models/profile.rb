@@ -1,5 +1,5 @@
 class Profile < ApplicationRecord
-  belongs_to :user, class_name: User,
+  belongs_to :user, class_name: User.to_s,
                     inverse_of: :profile
 
   def full_name

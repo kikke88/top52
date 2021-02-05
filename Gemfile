@@ -14,7 +14,6 @@ gem "select2-rails"
 
 group :development do
   gem "letter_opener"
-  gem "quiet_assets"
   gem "pry-rails"
   gem "rails-erd"
 end
@@ -27,9 +26,16 @@ gem "mina-rbenv-addons", require: false
 gem "rollbar"
 
 gem "foreman"
-gem "puma"
+#gem "puma"
+
+
+gem 'puma-daemon', require: false
+gem 'puma',  '~> 5' # эта версия для демона
+
+
 
 gem "pg", "~> 0.18", platform: :ruby
+gem "responders"
 gem 'therubyracer' # for execjs
 gem "sassc-rails"
 
@@ -49,7 +55,7 @@ gem "will_paginate"
 gem "will_paginate-bootstrap"
 # gem "md_simple_editor" # doesn't support jruby
 gem "ckeditor"
-gem "axlsx_rails"
+gem "caxlsx_rails"
 
 group :production do
   gem "whenever"

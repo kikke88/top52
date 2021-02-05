@@ -1,6 +1,6 @@
 class NewsfeedLocalController < NewsfeedBaseController
-  skip_before_filter :require_login, only: [:show]
-  skip_before_filter :require_moder_rights, only: [:show]
+  skip_before_action :require_login, only: [:show]
+  skip_before_action :require_moder_rights, only: [:show]
 
   def index
     @local_post = NewsfeedLocal.new

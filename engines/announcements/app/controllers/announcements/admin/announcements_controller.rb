@@ -1,6 +1,6 @@
 module Announcements
   class Admin::AnnouncementsController < Admin::ApplicationController
-    before_filter { authorize! :manage, :announcements }
+    before_action { authorize! :manage, :announcements }
 
     def index
       @announcements = Announcement.order("id desc")

@@ -2,7 +2,7 @@ module Core
   class ApplicationController < ActionController::Base
     layout "layouts/application"
 
-    before_filter :require_login
+    before_action :require_login
 
     rescue_from MayMay::Unauthorized, with: :not_authorized
 

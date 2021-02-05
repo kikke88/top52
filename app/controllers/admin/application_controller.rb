@@ -1,7 +1,7 @@
 # coding: utf-8
 class Admin::ApplicationController < ApplicationController
-  before_filter :require_login
-  before_filter :authorize_admins!
+  before_action :require_login
+  before_action :authorize_admins!
 
 private
 

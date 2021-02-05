@@ -1,5 +1,5 @@
 class AlgowikiEntitiesController < ApplicationController
-  skip_before_filter :require_login, only: [:show_by_task, :show_by_alg, :show_by_imp, :index, :index_type, :entities_of_type, :show, :show_by_id, :show_by_id_post]
+  skip_before_action :require_login, only: [:show_by_task, :show_by_alg, :show_by_imp, :index, :index_type, :entities_of_type, :show, :show_by_id, :show_by_id_post]
   before_action :set_algowiki_entity, only: [:show, :edit, :update, :destroy]
   SORT_BY = {
     "performance"=>"Performance, MTEPS",

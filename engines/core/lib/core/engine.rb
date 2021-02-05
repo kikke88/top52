@@ -8,7 +8,7 @@ module Core
 
     initializer "core.action_controller" do |app|
       ActiveSupport.on_load :action_controller do
-        helper Core::ApplicationHelper
+        ::ActionController::Base.helper Core::ApplicationHelper
       end
     end
   end

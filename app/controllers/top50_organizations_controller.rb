@@ -1,6 +1,6 @@
 class Top50OrganizationsController < Top50BaseController
-  skip_before_filter :require_login, only: [:suborg]
-  skip_before_filter :require_admin_rights, only: [:suborg]
+  skip_before_action :require_login, only: [:suborg]
+  skip_before_action :require_admin_rights, only: [:suborg]
   respond_to :json
 
   def get_rel_contain_id
